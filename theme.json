@@ -1,13 +1,89 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#fbf8f8",
+					"name": "BG Primary Light",
+					"slug": "custom-bg-primary-light"
+				},
+				{
+					"color": "#6e6e6e",
+					"name": "BG Secondary Gray",
+					"slug": "custom-bg-secondary-gray"
+				},
+				{
+					"color": "#00000099",
+					"name": "BG Overlay Dark",
+					"slug": "custom-bg-overlay-dark"
+				},
+				{
+					"color": "#ffffff99",
+					"name": "BG Overlay Light",
+					"slug": "custom-bg-overlay-light"
+				},
+				{
+					"color": "#1a1a1a",
+					"name": "TEXT Primary Dark",
+					"slug": "custom-text-primary-dark"
+				},
+				{
+					"color": "#767676",
+					"name": "TEXT Secondary Gray",
+					"slug": "custom-text-secondary-gray"
+				},
+				{
+					"color": "#ffffff",
+					"name": "TEXT Secondary Light",
+					"slug": "custom-text-secondary-light"
+				},
+				{
+					"color": "#0066be",
+					"name": "LINK Default",
+					"slug": "custom-link-default"
+				},
+				{
+					"color": "#ffe380",
+					"name": "LINK Focus",
+					"slug": "custom-link-focus"
+				},
+				{
+					"color": "#0877d7",
+					"name": "LINK Hover",
+					"slug": "custom-link-hover"
+				},
+				{
+					"color": "#c74700",
+					"name": "LINK Active",
+					"slug": "custom-link-active"
+				},
+				{
+					"color": "#c000c0",
+					"name": "LINK Visited",
+					"slug": "custom-link-visited"
+				},
+				{
+					"color": "#949494",
+					"name": "UI Border",
+					"slug": "custom-ui-border"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "620px",
 			"wideSize": "1000px"
 		},
 		"spacing": {
-			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
 		},
 		"typography": {
 			"fontFamilies": [
@@ -30,5 +106,6 @@
 			"name": "footer"
 		}
 	],
-	"version": 3
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }
