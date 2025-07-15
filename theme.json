@@ -241,11 +241,18 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "header"
+			"name": "header",
+			"title": "ヘッダー"
+		},
+		{
+			"area": "header",
+			"name": "portfolio-header",
+			"title": "ポートフォリオ ヘッダー"
 		},
 		{
 			"area": "footer",
-			"name": "footer"
+			"name": "footer",
+			"title": "フッター"
 		}
 	],
 	"version": 3,
