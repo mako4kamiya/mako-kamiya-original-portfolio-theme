@@ -5,7 +5,7 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#fbf8f8",
+					"color": "#ffffff",
 					"name": "BG Primary Light",
 					"slug": "custom-bg-primary-light"
 				},
