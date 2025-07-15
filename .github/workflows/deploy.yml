@@ -5,7 +5,6 @@ on:
     branches: [ main ]
     paths-ignore:
       - '.github/workflows/deploy.yml'
-      - 'readme.txt'
 
 jobs:
   deploy:
@@ -30,7 +29,7 @@ jobs:
     - name: Sync Theme Directory
       run: |
         rsync -avz --delete \
-        --exclude='.git/' \
         --exclude='.github/workflows/deploy.yml' \
+        --exclude='readme.txt' \
         ./ \
         ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.THEME_PATH }}
