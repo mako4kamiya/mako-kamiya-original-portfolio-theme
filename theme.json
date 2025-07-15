@@ -248,6 +248,10 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "フッター"
+		},
+		{
+			"name": "portfolio-flame",
+			"title": "ポートフォリオ フレーム"
 		}
 	],
 	"version": 3,
