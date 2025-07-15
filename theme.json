@@ -245,11 +245,6 @@
 			"title": "ヘッダー"
 		},
 		{
-			"area": "header",
-			"name": "portfolio-header",
-			"title": "ポートフォリオ ヘッダー"
-		},
-		{
 			"area": "footer",
 			"name": "footer",
 			"title": "フッター"
