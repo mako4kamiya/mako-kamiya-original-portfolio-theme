@@ -190,6 +190,7 @@
 			"background": "var(--wp--preset--color--custom-bg-primary-light)",
 			"text": "var(--wp--preset--color--custom-text-primary-dark)"
 		},
+		"css": ".portfolio-flame {\n    margin: unset;\n    height: 100vh;\n    position: absolute !important;\n    top: 0;\n    right: 0;\n    left: 0;\n    bottom: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}",
 		"elements": {
 			"button": {
 				"color": {
