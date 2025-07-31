@@ -6,7 +6,9 @@
  */
 ?>
 <!-- wp:group {"style":{"dimensions":{"minHeight":"56px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group" style="min-height:56px"><!-- wp:paragraph {"align":"center","className":"copyright","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1","letterSpacing":"2%"}},"textColor":"custom-text-primary-dark","fontSize":"custom-9","fontFamily":"work-sans"} -->
-<p class="has-text-align-center copyright has-custom-text-primary-dark-color has-text-color has-link-color has-work-sans-font-family has-custom-9-font-size" style="font-style:normal;font-weight:700;letter-spacing:2%;line-height:1"><?php esc_html_e('© 2025 Mako Kamiya. All rights reserved.', 'mako-kamiya-original-portfolio-theme');?></p>
-<!-- /wp:paragraph --></div>
+<div class="wp-block-group" style="min-height:56px">
+    <!-- wp:paragraph {"align":"center","className":"copyright","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1","letterSpacing":"2%"}},"textColor":"custom-text-primary-dark","fontSize":"custom-9","fontFamily":"work-sans"} -->
+    <p class="has-text-align-center copyright has-custom-text-primary-dark-color has-text-color has-link-color has-work-sans-font-family has-custom-9-font-size" style="font-style:normal;font-weight:700;letter-spacing:2%;line-height:1"><?php esc_html_e('© 2025 Mako Kamiya. All rights reserved.', 'mako-kamiya-original-portfolio-theme');?></p>
+    <!-- /wp:paragraph -->
+</div>
 <!-- /wp:group -->
