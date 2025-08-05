@@ -5,28 +5,42 @@
 <!-- wp:group {"tagName":"main","className":"portfolio-div","style":{"spacing":{"padding":{"left":"56px","right":"56px"},"margin":{"top":"0px","bottom":"0px"},"blockGap":"2rem"},"dimensions":{"minHeight":""}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 <main class="wp-block-group portfolio-div" style="margin-top:0px;margin-bottom:0px;padding-right:56px;padding-left:56px"><!-- wp:group {"className":"portfolio-left","style":{"dimensions":{"minHeight":""},"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group portfolio-left"><!-- wp:group {"metadata":{"name":"概要"},"className":"portfolio-left-fixed","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"4rem","bottom":"4rem"},"blockGap":"2rem","margin":{"top":"56px","bottom":"56px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"left"}} -->
-<div class="wp-block-group portfolio-left-fixed" style="margin-top:56px;margin-bottom:56px;padding-top:4rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:4rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"metadata":{"name":"Title List"},"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:post-terms {"term":"portfolio_tag"} /-->
+<div class="wp-block-group portfolio-left-fixed" style="margin-top:56px;margin-bottom:56px;padding-top:4rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:4rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"metadata":{"name":"Title List"},"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:post-terms {"term":"portfolio_category","separator":"","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"custom-8","fontFamily":"work-sans"} /-->
 
-<!-- wp:post-title {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+<!-- wp:post-title {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"custom-3"} /-->
 
-<!-- wp:post-terms {"term":"portfolio_category"} /--></div>
+<!-- wp:paragraph {"fontSize":"custom-8","fontFamily":"work-sans"} -->
+<p class="has-work-sans-font-family has-custom-8-font-size"><a href="http://example.com" data-type="page" data-id="484" target="_blank" rel="noreferrer noopener">http://example.com</a></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph -->
-<p><a href="http://example.com" data-type="page" data-id="484" target="_blank" rel="noreferrer noopener">URL</a></p>
+<!-- wp:group {"className":"description-list","layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
+<div class="wp-block-group description-list"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
+<p class="has-noto-sans-font-family has-custom-7-font-size" style="font-style:normal;font-weight:700">担当範囲</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:post-content /--></div>
+<!-- wp:post-terms {"term":"portfolio_tag","separator":"","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"},":hover":{"color":{"text":"var:preset|color|custom-text-secondary-gray"}}}}},"textColor":"custom-text-primary-dark","fontSize":"custom-7","fontFamily":"noto-sans"} /-->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
+<p class="has-noto-sans-font-family has-custom-7-font-size" style="font-style:normal;font-weight:700">使用ツール</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-terms {"term":"portfolio_tag","separator":"","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"},":hover":{"color":{"text":"var:preset|color|custom-text-secondary-gray"}}}}},"textColor":"custom-text-primary-dark","fontSize":"custom-7","fontFamily":"noto-sans"} /-->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
+<p class="has-noto-sans-font-family has-custom-7-font-size" style="font-style:normal;font-weight:700">制作時間</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"custom-7","fontFamily":"noto-sans"} -->
+<p class="has-noto-sans-font-family has-custom-7-font-size">6週間</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"portfolio-right","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"4rem","bottom":"4rem"},"margin":{"top":"56px","bottom":"56px"}},"layout":{"rowSpan":1,"columnSpan":2}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-<div class="wp-block-group portfolio-right" style="margin-top:56px;margin-bottom:56px;padding-top:4rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:4rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/07/36063783-1f64-3134-aa81-423d3135059d-1024x683.jpg" alt="" class=""/></figure>
-<!-- /wp:image -->
-
-<!-- wp:post-featured-image /-->
+<div class="wp-block-group portfolio-right" style="margin-top:56px;margin-bottom:56px;padding-top:4rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:4rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:post-featured-image /-->
 
 <!-- wp:post-content /-->
 
