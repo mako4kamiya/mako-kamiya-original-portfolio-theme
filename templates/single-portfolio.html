@@ -13,14 +13,14 @@
 <!-- wp:post-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"fontSize":"custom-3","fontFamily":"noto-sans"} /-->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"acf/field","args":{"key":"p_url"}},"text":{"source":"acf/field","args":{"key":"p_url"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"custom-link-default","metadata":{"bindings":{"url":{"source":"acf/field","args":{"key":"p_url"}},"text":{"source":"acf/field","args":{"key":"p_url"}}}},"className":"portfolio-url","style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.75"},"elements":{"link":{"color":{"text":"var:preset|color|custom-link-default"}}}},"fontSize":"custom-8","fontFamily":"work-sans"} -->
+<div class="wp-block-button portfolio-url"><a class="wp-block-button__link has-custom-link-default-color has-text-color has-link-color has-work-sans-font-family has-custom-8-font-size has-custom-font-size wp-element-button" style="font-style:normal;font-weight:400;line-height:1.75"></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Description List"},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"metadata":{"name":"DT"},"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.3"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
+<!-- wp:group {"metadata":{"name":"Description List"},"className":"description-list","layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
+<div class="wp-block-group description-list"><!-- wp:paragraph {"metadata":{"name":"DT"},"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.3"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
 <p class="has-noto-sans-font-family has-custom-7-font-size" style="font-style:normal;font-weight:700;line-height:1.3">担当範囲</p>
 <!-- /wp:paragraph -->
 
@@ -43,7 +43,11 @@
 <!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"p_production-time"}}}},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.3"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
 <p class="has-noto-sans-font-family has-custom-7-font-size" style="font-style:normal;font-weight:400;line-height:1.3"></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"p_overview"}}}},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":1.6000000000000001}},"fontSize":"custom-6","fontFamily":"noto-sans"} -->
+<p class="has-noto-sans-font-family has-custom-6-font-size" style="font-style:normal;font-weight:400;line-height:1.6"></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"metadata":{"name":"ぱんくず"}} -->
@@ -52,10 +56,10 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Portfolio Right"},"style":{"layout":{"columnSpan":2,"rowSpan":1},"spacing":{"padding":{"top":"4rem","bottom":"4rem","right":"2rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group" style="padding-top:4rem;padding-right:2rem;padding-bottom:4rem"><!-- wp:post-featured-image {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} /-->
+<!-- wp:group {"metadata":{"name":"Portfolio Right"},"style":{"layout":{"rowSpan":1,"columnSpan":2},"spacing":{"padding":{"top":"4rem","bottom":"4rem","right":"2rem"},"blockGap":"4rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-top:4rem;padding-right:2rem;padding-bottom:4rem"><!-- wp:post-featured-image {"aspectRatio":"auto","className":"eyecatch","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
 
-<!-- wp:post-content /--></div>
+<!-- wp:post-content {"layout":{"type":"default"}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
