@@ -1,11 +1,10 @@
 <!-- wp:template-part {"slug":"portfolio-flame","area":"uncategorized"} /-->
 
-<!-- wp:group {"metadata":{"name":"portfolio-main"},"className":"portfolio-main","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
-<div class="wp-block-group portfolio-main"><!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"right":"56px","left":"56px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-right:56px;padding-left:56px"><!-- wp:group {"style":{"dimensions":{"minHeight":""}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"タイトルグループ"},"style":{"dimensions":{"minHeight":"px"},"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
+<!-- wp:group {"metadata":{"name":"portfolio-main"},"className":"portfolio-main grid-12","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","flexWrap":"nowrap"}} -->
+<div class="wp-block-group portfolio-main grid-12"><!-- wp:group {"metadata":{"name":"profile-contents"},"className":"profile-contents grid-column-start-3 grid-column-end-11","style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":""},"spacing":{"blockGap":"2rem"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group profile-contents grid-column-start-3 grid-column-end-11"><!-- wp:group {"metadata":{"name":"タイトルグループ"},"style":{"dimensions":{"minHeight":"px"},"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="min-height:px"><!-- wp:post-title {"style":{"typography":{"lineHeight":1.3999999999999999,"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"custom-2","fontFamily":"work-sans"} /-->
 
 <!-- wp:heading {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"jp-title"}}}},"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.7"}},"fontSize":"custom-8","fontFamily":"noto-sans"} -->
@@ -13,23 +12,22 @@
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:avatar /-->
+<!-- wp:group {"className":"grid-8","style":{"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group grid-8"><!-- wp:avatar {"size":192,"className":"grid-column-start-2 grid-column-end-4","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
 
-<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:post-author-name {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"fontSize":"custom-4","fontFamily":"noto-sans"} /-->
+<!-- wp:group {"className":"grid-column-start-4 grid-column-end-8","layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group grid-column-start-4 grid-column-end-8"><!-- wp:post-author-name {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"fontSize":"custom-4","fontFamily":"noto-sans"} /-->
 
 <!-- wp:post-author-biography {"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"fontSize":"custom-8","fontFamily":"noto-sans"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"profile-contents"},"className":"contact-form profile-contents grid-column-start-3 grid-column-end-11","layout":{"type":"default"}} -->
+<div class="wp-block-group contact-form profile-contents grid-column-start-3 grid-column-end-11"><!-- wp:shortcode -->
+[contact-form-7 id="176987b" title="コンタクトフォーム 1"]
+<!-- /wp:shortcode --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:shortcode -->
-[contact-form-7 id="176987b" title="コンタクトフォーム 1"]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"portfolio-footer"} /--></div>
-<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"portfolio-footer"} /-->

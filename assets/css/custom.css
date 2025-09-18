@@ -73,7 +73,7 @@ header {
 .front-main {
     margin-left: unset !important;
     margin-right: unset !important;
-    display: flex;
+    display: grid;
     align-items: center;
 }
 .portfolio-coverflow {
