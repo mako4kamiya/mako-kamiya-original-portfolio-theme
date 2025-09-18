@@ -1,0 +1,130 @@
+/* ポートフォリオフレーム */
+.portfolio-flame-right {
+    width: 56px;
+    height: 100vh;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    background-color: var(--wp--preset--color--custom-bg-overlay-light);
+    z-index: 2;
+}
+.portfolio-flame-left {
+    width: 56px;
+    height: 100vh;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background-color: var(--wp--preset--color--custom-bg-overlay-light);
+    z-index: 2;
+}
+.portfolio-line-top {
+    width: 100%;
+    position: fixed !important;
+    top: 56px;
+    border: 1px solid var(--wp--preset--color--custom-text-primary-dark);
+    z-index: 11;
+}
+.portfolio-line-right {
+    height: 100vh;
+    position: fixed !important;
+    top: 0;
+    right: 56px;
+    border: 1px solid var(--wp--preset--color--custom-text-primary-dark);
+    z-index: 11;
+}
+.portfolio-line-left {
+    height: 100vh;
+    position: fixed !important;
+    top: 0;
+    left: 56px;
+    border: 1px solid var(--wp--preset--color--custom-text-primary-dark);
+    z-index: 11;
+}
+.portfolio-line-bottom {
+    width: 100%;
+    position: fixed !important;
+    bottom: 56px;
+    border: 1px solid var(--wp--preset--color--custom-text-primary-dark);
+    z-index: 11;
+}
+/* ポートフォリオフレーム ここまで */
+
+
+/* フロント・プロフィールページ共通 */
+.portfolio-main {
+    height: 100vh;
+    justify-content: space-between;
+}
+/* フロント・プロフィールページ共通 ここまで */
+
+/* フロントページ */
+.vp-portfolio__items-arrow-prev {
+    left: 66px !important;
+}
+.vp-portfolio__items-arrow-next {
+    right: 66px !important;
+}
+.portfolio-coverflow .vp-portfolio__item-overlay {
+    background: var(--wp--preset--color--custom-bg-overlay-dark);
+}
+/* フロントページ ここまで */
+
+
+/* シングルポートフォリオページ */
+.single-portfolio-header {
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+}
+.portfolio-left-sticky {
+    position: sticky !important;
+    top: 56px;
+    height: calc(100vh - 112px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.taxonomy-portfolio_category a {
+    transition: 0.5s;
+    text-decoration: unset;
+    background-color: var(--wp--preset--color--custom-bg-secondary-gray);
+    padding: 3px 8px;
+}
+.taxonomy-portfolio_category a:hover {
+    background-color: unset;
+}
+.portfolio-url a,
+.wp-block-button__link {
+    padding: unset;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.portfolio-url a:hover {
+    color: var(--wp--preset--color--custom-link-hover) !important;
+    text-decoration: unset;
+    transform: scale(1.05);
+}
+.description-list {
+    grid-template-columns: 1fr 3fr !important;
+}
+.description-list-links a {
+    text-decoration: unset;
+}
+.description-list-links a:hover {
+    transform: scale(1.05);
+}
+.eyecatch {
+    height: calc(100vh - 240px) !important;
+    width: 100%;
+}
+/* シングルポートフォリオページ ここまで */
+
+
+
+/* フッター */
+.portfolio-footer {
+    position: fixed !important;
+    width: 100%;
+    bottom: 0;
+}
+/* フッター ここまで */
