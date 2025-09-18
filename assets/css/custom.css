@@ -1,3 +1,24 @@
+/* ヘッダー共通 */
+header {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    margin-block-start: unset !important;
+}
+/* ポートフォリオ用フッター */
+.portfolio-footer {
+    position: fixed !important;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    margin-block-start: unset;
+}
+/* ポートフォリオ用メイン */
+.portfolio-main {
+    margin: 56px !important;
+    min-height: calc(100vh - 112px);
+}
 /* ポートフォリオフレーム */
 .portfolio-flame-right {
     width: 56px;
@@ -47,35 +68,32 @@
     border: 1px solid var(--wp--preset--color--custom-text-primary-dark);
     z-index: 11;
 }
-/* ポートフォリオフレーム ここまで */
-
-
-/* フロント・プロフィールページ共通 */
-.portfolio-main {
-    height: 100vh;
-    justify-content: space-between;
-}
-/* フロント・プロフィールページ共通 ここまで */
 
 /* フロントページ */
+.front-main {
+    margin-left: unset !important;
+    margin-right: unset !important;
+    display: flex;
+    align-items: center;
+}
+.portfolio-coverflow {
+    margin: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .vp-portfolio__items-arrow-prev {
     left: 66px !important;
 }
 .vp-portfolio__items-arrow-next {
     right: 66px !important;
 }
-.portfolio-coverflow .vp-portfolio__item-overlay {
-    background: var(--wp--preset--color--custom-bg-overlay-dark);
+.vp-portfolio__item-overlay {
+    background: var(--wp--preset--color--custom-bg-overlay-dark) !important;
 }
-/* フロントページ ここまで */
-
 
 /* シングルポートフォリオページ */
-.single-portfolio-header {
-    position: fixed !important;
-    width: 100%;
-    z-index: 1;
-}
 .portfolio-left-sticky {
     position: sticky !important;
     top: 56px;
@@ -117,14 +135,43 @@
     height: calc(100vh - 240px) !important;
     width: 100%;
 }
-/* シングルポートフォリオページ ここまで */
 
-
-
-/* フッター */
-.portfolio-footer {
-    position: fixed !important;
-    width: 100%;
-    bottom: 0;
+/* プロフィールページ */
+.profile-contents {
+    min-height: calc(100vh - 112px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-/* フッター ここまで */
+.contact-form {
+    display: flex;
+    align-items: center;
+}
+
+/* グリッドレイアウト */
+.grid-12 {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+}
+.grid-8 {
+    display: grid !important;
+    grid-template-columns: repeat(8, 1fr);
+}
+.grid-column-start-2 {
+    grid-column-start: 2;
+}
+.grid-column-start-3 {
+    grid-column-start: 3;
+}
+.grid-column-start-4 {
+    grid-column-start: 4;
+}
+.grid-column-end-4 {
+    grid-column-end: 4;
+}
+.grid-column-end-8 {
+    grid-column-end: 8;
+}
+.grid-column-end-11 {
+    grid-column-end: 11;
+}
