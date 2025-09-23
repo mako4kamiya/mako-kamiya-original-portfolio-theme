@@ -3,7 +3,7 @@ header {
     position: fixed !important;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     margin-block-start: unset !important;
 }
 /* ポートフォリオ用フッター */
@@ -178,10 +178,27 @@ header {
 
 @media screen and (max-width: 768px) {
     header .common-header {
-        padding-right: 16px !important;
-        padding-left: 16px !important;
+        padding-right: unset !important;
+        padding-left: unset !important;
     }
     .portfolio-flame {
         display: none;
+    }
+    .front-main {
+        display: block;
+    }
+    .portfolio-main {
+        margin: unset !important;
+        padding: 3rem 1rem;
+        display: flex !important;
+    }
+    .profile-contents {
+        justify-content: space-between;
+    }
+    .profile-content-detail {
+        margin: unset !important;
+        display: flex !important;
+        flex-direction: column;
+        gap: 2rem !important;
     }
 }
