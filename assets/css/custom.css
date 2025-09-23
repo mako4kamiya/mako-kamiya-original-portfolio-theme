@@ -175,3 +175,13 @@ header {
 .grid-column-end-11 {
     grid-column-end: 11;
 }
+
+@media screen and (max-width: 768px) {
+    header .common-header {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+    .portfolio-flame {
+        display: none;
+    }
+}
