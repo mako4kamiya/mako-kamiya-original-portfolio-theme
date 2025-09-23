@@ -68,6 +68,10 @@ header {
     border: 1px solid var(--wp--preset--color--custom-text-primary-dark);
     z-index: 11;
 }
+/* パンくずリスト */
+.breadcrumbs {
+    margin: unset !important;
+}
 
 /* フロントページ */
 .front-main {
@@ -139,8 +143,6 @@ header {
 /* プロフィールページ */
 .profile-contents {
     min-height: calc(100vh - 112px);
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 .contact-form {
@@ -181,18 +183,28 @@ header {
         padding-right: unset !important;
         padding-left: unset !important;
     }
+    .portfolio-footer {
+        position: relative !important;
+    }
     .portfolio-flame {
         display: none;
     }
-    .front-main {
-        display: block;
-    }
     .portfolio-main {
-        margin: unset !important;
+        margin-top: 56px !important;
+        margin-left: unset !important;
+        margin-right: unset !important;
+        margin-bottom: unset !important;
         padding: 3rem 1rem;
         display: flex !important;
+        gap: 3rem !important;
+    }
+    .front-main {
+        display: block !important;
     }
     .profile-contents {
+        height: calc(100vh - 152px);
+        min-height: unset;
+        gap: unset !important;
         justify-content: space-between;
     }
     .profile-content-detail {
