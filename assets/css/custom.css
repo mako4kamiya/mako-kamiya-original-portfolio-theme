@@ -1,4 +1,7 @@
 /* ヘッダー共通 */
+.for-mobile {
+    display: none!important;
+}
 header {
     position: fixed !important;
     width: 100%;
@@ -74,80 +77,89 @@ header {
 }
 
 /* フロントページ */
-.front-main {
-    margin-left: unset !important;
-    margin-right: unset !important;
-    display: grid;
-    align-items: center;
-}
-.portfolio-coverflow {
-    margin: unset;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.vp-portfolio__items-arrow-prev {
-    left: 66px !important;
-}
-.vp-portfolio__items-arrow-next {
-    right: 66px !important;
-}
-.vp-portfolio__item-overlay {
-    background: var(--wp--preset--color--custom-bg-overlay-dark) !important;
+body.home {
+    .portfolio-main {
+        margin-left: unset !important;
+        margin-right: unset !important;
+        display: grid;
+        align-items: center;
+    }
+    .portfolio-coverflow {
+        margin: unset;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .vp-portfolio__items-arrow-prev {
+        left: 66px !important;
+    }
+    .vp-portfolio__items-arrow-next {
+        right: 66px !important;
+    }
+    .vp-portfolio__item-overlay {
+        background: var(--wp--preset--color--custom-bg-overlay-dark) !important;
+    }
 }
 
 /* シングルポートフォリオページ */
-.portfolio-left-sticky {
-    position: sticky !important;
-    top: 56px;
-    height: calc(100vh - 112px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.taxonomy-portfolio_category a {
-    transition: 0.5s;
-    text-decoration: unset;
-    background-color: var(--wp--preset--color--custom-bg-secondary-gray);
-    padding: 3px 8px;
-}
-.taxonomy-portfolio_category a:hover {
-    background-color: unset;
-}
-.portfolio-url a,
-.wp-block-button__link {
-    padding: unset;
-    text-decoration: underline;
-    transition: 0.5s;
-}
-.portfolio-url a:hover {
-    color: var(--wp--preset--color--custom-link-hover) !important;
-    text-decoration: unset;
-    transform: scale(1.05);
-}
-.description-list {
-    grid-template-columns: 1fr 3fr !important;
-}
-.description-list-links a {
-    text-decoration: unset;
-}
-.description-list-links a:hover {
-    transform: scale(1.05);
-}
-.eyecatch {
-    height: calc(100vh - 240px) !important;
-    width: 100%;
+body.single-portfolio {
+    .portfolio-left-sticky {
+        position: sticky !important;
+        top: 56px;
+        height: calc(100vh - 112px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .taxonomy-portfolio_category {
+        display: flex;
+    }
+    .taxonomy-portfolio_category a {
+        transition: 0.5s;
+        text-decoration: unset;
+        background-color: var(--wp--preset--color--custom-bg-secondary-gray);
+        padding: 3px 8px;
+    }
+    .taxonomy-portfolio_category a:hover {
+        background-color: unset;
+    }
+    .portfolio-url a,
+    .wp-block-button__link {
+        padding: unset;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+    .portfolio-url a:hover {
+        color: var(--wp--preset--color--custom-link-hover) !important;
+        text-decoration: unset;
+        transform: scale(1.05);
+    }
+    .description-list {
+        grid-template-columns: 1fr 3fr !important;
+    }
+    .description-list-links a {
+        text-decoration: unset;
+    }
+    .description-list-links a:hover {
+        transform: scale(1.05);
+    }
+    .eyecatch {
+        height: calc(100vh - 240px) !important;
+        width: 100%;
+    }
 }
 
 /* プロフィールページ */
-.profile-contents {
-    min-height: calc(100vh - 112px);
-    justify-content: center;
-}
-.contact-form {
-    display: flex;
-    align-items: center;
+body.page-template-page-profile {
+    .profile-contents {
+        min-height: calc(100vh - 112px);
+        justify-content: center;
+    }
+    .contact-form {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* グリッドレイアウト */
@@ -179,6 +191,12 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    .for-mobile  {
+        display: block !important;
+    }
+    .for-pc {
+        display: none !important;
+    }
     header .common-header {
         padding-right: unset !important;
         padding-left: unset !important;
@@ -198,19 +216,63 @@ header {
         display: flex !important;
         gap: 3rem !important;
     }
-    .front-main {
-        display: block !important;
+    
+    /* フロントページ */
+    body.home {
+        .portfolio-main {
+            display: block !important;
+        }
+        .vp-portfolio__items-arrow-prev {
+            left: 0 !important;
+        }
+        .vp-portfolio__items-arrow-next {
+            right: 0 !important;
+        }
     }
-    .profile-contents {
-        height: calc(100vh - 152px);
-        min-height: unset;
-        gap: unset !important;
-        justify-content: space-between;
+    
+    /* シングルポートフォリオページ */
+    body.single-portfolio {
+        .portfolio-main {
+            padding: 3rem 0;
+            flex-direction: column;
+            .portfolio-left {
+                .portfolio-left-sticky {
+                    position: relative !important;
+                    top: 0;
+                    height: auto !important;
+                    border: unset;
+                    padding: unset !important;
+                    .title-list {
+                        gap: unset;
+                    }
+                    .description-list {
+                        gap: 0.5rem !important;
+                    }
+                    .portfolio-left-sticky-contents {
+                        /* height: calc(100vh - 104px); */
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .portfolio-right {
+                padding: unset !important;
+            }
+        }
     }
-    .profile-content-detail {
-        margin: unset !important;
-        display: flex !important;
-        flex-direction: column;
-        gap: 2rem !important;
+    
+    /* プロフィールページ */
+    body.page-template-page-profile {
+        .profile-contents {
+            height: calc(100vh - 152px);
+            min-height: unset;
+            gap: unset !important;
+            justify-content: space-between;
+        }
+        .profile-content-detail {
+            margin: unset !important;
+            display: flex !important;
+            flex-direction: column;
+            gap: 2rem !important;
+        }
     }
 }

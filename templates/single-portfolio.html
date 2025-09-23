@@ -4,10 +4,10 @@
 
 <!-- wp:group {"metadata":{"name":"portfolio-main"},"className":"portfolio-main","style":{"dimensions":{"minHeight":"px"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 <div class="wp-block-group portfolio-main" style="min-height:px"><!-- wp:group {"metadata":{"name":"Portfolio Left"},"className":"portfolio-left","style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"default"}} -->
-<div class="wp-block-group portfolio-left"><!-- wp:group {"metadata":{"name":"Portfolio Left Sticky"},"className":"portfolio-left-sticky","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem","left":"1rem","right":"1rem"}},"border":{"right":{"width":"2px"},"top":[],"bottom":[],"left":[]}},"layout":{"type":"default"}} -->
-<div class="wp-block-group portfolio-left-sticky" style="border-right-width:2px;padding-top:4rem;padding-right:1rem;padding-bottom:4rem;padding-left:1rem"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Titlelist"},"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:post-terms {"term":"portfolio_category","separator":" ","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-bg-primary-light"},":hover":{"color":{"text":"var:preset|color|custom-text-secondary-gray"}}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1"}},"fontSize":"custom-8","fontFamily":"work-sans"} /-->
+<div class="wp-block-group portfolio-left"><!-- wp:group {"metadata":{"name":"Portfolio Left Sticky"},"className":"portfolio-left-sticky","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}},"border":{"right":{"width":"2px"},"top":[],"bottom":[],"left":[]}},"layout":{"type":"default"}} -->
+<div class="wp-block-group portfolio-left-sticky" style="border-right-width:2px;padding-top:4rem;padding-bottom:4rem"><!-- wp:group {"className":"portfolio-left-sticky-contents","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
+<div class="wp-block-group portfolio-left-sticky-contents"><!-- wp:group {"metadata":{"name":"Titlelist"},"className":"title-list","style":{"spacing":{"blockGap":"1rem","padding":{"right":"1rem","left":"1rem"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+<div class="wp-block-group title-list" style="padding-right:1rem;padding-left:1rem"><!-- wp:post-terms {"term":"portfolio_category","separator":" ","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-bg-primary-light"},":hover":{"color":{"text":"var:preset|color|custom-text-secondary-gray"}}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"custom-8","fontFamily":"work-sans"} /-->
 
 <!-- wp:post-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"fontSize":"custom-3","fontFamily":"noto-sans"} /-->
 
@@ -18,8 +18,10 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Description List"},"className":"description-list","layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
-<div class="wp-block-group description-list"><!-- wp:paragraph {"metadata":{"name":"DT"},"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.3"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
+<!-- wp:post-featured-image {"className":"for-mobile","style":{"layout":{"selfStretch":"fixed","flexSize":"10px"}}} /-->
+
+<!-- wp:group {"metadata":{"name":"Description List"},"className":"description-list","style":{"spacing":{"padding":{"right":"1rem","left":"1rem"}}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
+<div class="wp-block-group description-list" style="padding-right:1rem;padding-left:1rem"><!-- wp:paragraph {"metadata":{"name":"DT"},"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.3"}},"fontSize":"custom-7","fontFamily":"noto-sans"} -->
 <p class="has-noto-sans-font-family has-custom-7-font-size" style="font-style:normal;font-weight:700;line-height:1.3">担当範囲</p>
 <!-- /wp:paragraph -->
 
@@ -40,19 +42,27 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"p_overview"}}}},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":1.6000000000000001}},"fontSize":"custom-6","fontFamily":"noto-sans"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"1rem","left":"1rem"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-right:1rem;padding-left:1rem"><!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"p_overview"}}}},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":1.6000000000000001}},"fontSize":"custom-6","fontFamily":"noto-sans"} -->
 <p class="has-noto-sans-font-family has-custom-6-font-size" style="font-style:normal;font-weight:400;line-height:1.6"></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"breadcrumbs","area":"uncategorized","className":"breadcrumbs"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Portfolio Right"},"style":{"layout":{"rowSpan":1,"columnSpan":2},"spacing":{"padding":{"top":"4rem","bottom":"4rem","right":"2rem"},"blockGap":"4rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:4rem;padding-right:2rem;padding-bottom:4rem"><!-- wp:post-featured-image {"aspectRatio":"auto","className":"eyecatch","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+<!-- wp:group {"metadata":{"name":"パンくずリスト"},"className":"for-pc","style":{"spacing":{"padding":{"right":"1rem","left":"1rem"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group for-pc" style="padding-right:1rem;padding-left:1rem"><!-- wp:template-part {"slug":"breadcrumbs","area":"uncategorized","className":"breadcrumbs"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
-<!-- wp:post-content {"layout":{"type":"default"}} /--></div>
+<!-- wp:group {"metadata":{"name":"Portfolio Right"},"className":"portfolio-right","style":{"layout":{"rowSpan":1,"columnSpan":2},"spacing":{"padding":{"top":"4rem","bottom":"4rem","right":"2rem"},"blockGap":"4rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group portfolio-right" style="padding-top:4rem;padding-right:2rem;padding-bottom:4rem"><!-- wp:post-featured-image {"aspectRatio":"auto","className":"eyecatch for-pc","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+
+<!-- wp:post-content {"layout":{"type":"default"}} /-->
+
+<!-- wp:group {"metadata":{"name":"パンくずリスト"},"className":"for-mobile","style":{"spacing":{"padding":{"right":"1rem","left":"1rem"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group for-mobile" style="padding-right:1rem;padding-left:1rem"><!-- wp:template-part {"slug":"breadcrumbs","area":"uncategorized"} /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
