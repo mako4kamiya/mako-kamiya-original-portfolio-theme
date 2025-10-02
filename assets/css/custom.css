@@ -157,6 +157,18 @@ body.single-portfolio {
         height: calc(100vh - 240px) !important;
         width: 100%;
     }
+    .contents {
+        height: calc(100vh - 112px);
+        display: flex;
+        flex-direction: column;
+        margin: 56px 0;
+        figure {
+            margin-bottom: 3rem;
+        }
+        div {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 /* プロフィールページ */

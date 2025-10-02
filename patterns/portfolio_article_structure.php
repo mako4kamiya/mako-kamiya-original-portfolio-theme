@@ -5,8 +5,13 @@
  * Categories: 
  */
 ?>
-<!-- wp:group {"metadata":{"name":"ポートフォリオについての説明"},"style":{"spacing":{"blockGap":"2rem","padding":{"right":"2rem","left":"2rem","top":"3rem","bottom":"3rem"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:3rem;padding-right:2rem;padding-bottom:3rem;padding-left:2rem"><!-- wp:group {"metadata":{"name":"見出し＋リスト"},"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+<!-- wp:group {"metadata":{"name":"ポートフォリオについての説明","patternName":"mako-kamiya-original-portfolio-theme/portfolio_article_structure"},"style":{"spacing":{"blockGap":"2rem","padding":{"right":"2rem","left":"2rem","top":"3rem","bottom":"3rem"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-top:3rem;padding-right:2rem;padding-bottom:3rem;padding-left:2rem"><!-- wp:group {"metadata":{"name":"contents"},"className":"contents","style":{"dimensions":{"minHeight":"px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group contents" style="min-height:px"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"metadata":{"name":"見出し＋リスト"},"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"textColor":"custom-text-primary-dark","fontSize":"custom-4","fontFamily":"noto-sans"} -->
 <h2 class="wp-block-heading has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-4-font-size" style="font-style:normal;font-weight:700;line-height:1.5">制作の目的</h2>
 <!-- /wp:heading -->
@@ -32,9 +37,15 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
-<p class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">「優しさ」「親しみやすさ」「誠実さ」を表現するため、余白を活かしたシンプルなデザインにしました。制作物を引き立てるニュートラルな配色を採用し、フォントは英語に軽やかで視認性の高い「Work Sans」、日本語に安心感のある「Noto Sans JP」を使用しています。</p>
+<p class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">　「優しさ」「親しみやすさ」「誠実さ」を表現するため、余白を活かしたシンプルなデザインにしました。制作物を引き立てるニュートラルな配色を採用し、フォントは英語に軽やかで視認性の高い「Work Sans」、日本語に安心感のある「Noto Sans JP」を使用しています。</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"contents"},"className":"contents","layout":{"type":"default"}} -->
+<div class="wp-block-group contents"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
+<!-- /wp:image -->
 
 <!-- wp:group {"metadata":{"name":"見出し＋リスト"},"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"textColor":"custom-text-primary-dark","fontSize":"custom-4","fontFamily":"noto-sans"} -->
@@ -55,14 +66,20 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>WordPress プラグイン「Secure Custom Fields (SCF)」を活用したコンテンツ管理</li>
+<li>WordPress プラグイン「Secure Custom Fields (SCF)」を活用したタクソノミー等の管理</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
 <li class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">「GitHub Actions」を活用したデプロイの自動化</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"contents"},"className":"contents","layout":{"type":"default"}} -->
+<div class="wp-block-group contents"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
+<!-- /wp:image -->
 
 <!-- wp:group {"metadata":{"name":"見出し＋番号リスト"},"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"textColor":"custom-text-primary-dark","fontSize":"custom-4","fontFamily":"noto-sans"} -->
@@ -71,7 +88,7 @@
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
-<li class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">企画と要件定義：ポートフォリオに必要な要素と目標を明確化</li>
+<li class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">企画と要件定義：ポートフォリオサイトの構成や機能などの明確化</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -90,7 +107,13 @@
 <li>テストと最適化：クロスブラウザテスト、レスポンシブ対応、表示速度の最適化</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"contents"},"className":"contents","layout":{"type":"default"}} -->
+<div class="wp-block-group contents"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
+<!-- /wp:image -->
 
 <!-- wp:group {"metadata":{"name":"見出し＋文章"},"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}},"textColor":"custom-text-primary-dark","fontSize":"custom-4","fontFamily":"noto-sans"} -->
@@ -98,11 +121,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
-<p class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">このプロジェクトを通じて、デザインからコーディング、WordPress実装、サイト公開までの一貫した制作フローを経験し、自身のスキルを向上させることができました。 </p>
+<p class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">　このプロジェクトを通じて、デザインからコーディング、WordPress実装、サイト公開までの一貫した制作フローを経験し、自身のスキルを向上させることができました。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
-<p class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">当初はクラシックテーマで制作しましたが、フルサイト編集に対応したブロックテーマが主流であることを学び、作り直しました。この過程で、ブロックテーマの仕組みを実践的に理解することができました。</p>
+<p class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">　制作当初はクラシックテーマで制作しましたが、フルサイト編集に対応したブロックテーマが主流であることを学び、作り直しました。この過程で、ブロックテーマの仕組みを実践的に理解することができました。</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -112,7 +135,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>デザインや機能のブラッシュアップ</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary-dark"}}},"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.7"}},"textColor":"custom-text-primary-dark","fontSize":"custom-8","fontFamily":"noto-sans"} -->
 <li class="has-custom-text-primary-dark-color has-text-color has-link-color has-noto-sans-font-family has-custom-8-font-size" style="font-style:normal;font-weight:400;line-height:1.7">制作物の追加</li>
 <!-- /wp:list-item -->
 
@@ -120,5 +147,6 @@
 <li>ブログ機能を追加し、制作過程や学びを発信</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
