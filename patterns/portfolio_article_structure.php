@@ -6,7 +6,7 @@
  */
 ?>
 <!-- wp:group {"metadata":{"name":"ポートフォリオについての説明","patternName":"mako-kamiya-original-portfolio-theme/portfolio_article_structure"},"style":{"spacing":{"blockGap":"2rem","padding":{"right":"2rem","left":"2rem","top":"3rem","bottom":"3rem"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:3rem;padding-right:2rem;padding-bottom:3rem;padding-left:2rem"><!-- wp:group {"metadata":{"name":"contents"},"className":"contents","style":{"dimensions":{"minHeight":"px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:3rem;padding-right:2rem;padding-bottom:3rem;padding-left:2rem"><!-- wp:group {"metadata":{"name":"contents"},"className":"contents inview","style":{"dimensions":{"minHeight":"px"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group contents" style="min-height:px"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
 <!-- /wp:image -->
@@ -42,7 +42,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"contents"},"className":"contents","layout":{"type":"default"}} -->
+<!-- wp:group {"metadata":{"name":"contents"},"className":"contents inview","layout":{"type":"default"}} -->
 <div class="wp-block-group contents"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
 <!-- /wp:image -->
@@ -76,7 +76,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"contents"},"className":"contents","layout":{"type":"default"}} -->
+<!-- wp:group {"metadata":{"name":"contents"},"className":"contents inview","layout":{"type":"default"}} -->
 <div class="wp-block-group contents"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
 <!-- /wp:image -->
@@ -110,7 +110,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"contents"},"className":"contents","layout":{"type":"default"}} -->
+<!-- wp:group {"metadata":{"name":"contents"},"className":"contents inview","layout":{"type":"default"}} -->
 <div class="wp-block-group contents"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="http://makokamiya-portfolio.local/wp-content/uploads/2025/09/pages-mocup.jpg" alt="" class=""/></figure>
 <!-- /wp:image -->
