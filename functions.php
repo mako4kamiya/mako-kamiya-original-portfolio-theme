@@ -12,3 +12,4 @@ if (!function_exists('mkopt_block_assets')) :
     }
 endif;
 add_action('enqueue_block_assets', 'mkopt_block_assets');
+
