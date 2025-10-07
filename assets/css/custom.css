@@ -169,6 +169,10 @@ body.single-portfolio {
             margin-bottom: 2rem;
         }
     }
+    /* GSAPアニメーション */
+    .inview {
+        opacity: 0;
+    }
 }
 
 /* プロフィールページ */

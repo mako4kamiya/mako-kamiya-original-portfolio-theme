@@ -9,12 +9,16 @@ document.addEventListener("DOMContentLoaded", function(event){
     window.addEventListener("load", function(e){
 
         //custom GSAP code goes here
-        // This tween will rotate an element with a class of .my-element
-        // gsap.to('.my-element', {
-        //     rotation: 360,
-        //     duration: 2,
-        //     ease: 'bounce.out'
-        // })
+        gsap.to('.inview', {
+            scrollTrigger: {
+                trigger: '.inview',
+                start: 'top center',
+                end: 'bottom center',
+                markers: true,
+                toggleActions: 'play reverse play reverse',
+            },
+            opacity: 1,
+        })
 
         console.log("window loaded");
     }, false);
