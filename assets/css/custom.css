@@ -1,4 +1,7 @@
 /* 共通 */
+body {
+    position: relative;
+}
 .for-mobile {
     display: none!important;
 }
@@ -20,10 +23,6 @@ footer {
 /* ポートフォリオ用フッター */
 .portfolio-footer {
     position: fixed !important;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
-    margin-block-start: unset;
 }
 /* ポートフォリオ用メイン */
 .portfolio-main {
@@ -158,7 +157,7 @@ body.single-portfolio {
         width: 100%;
     }
     .contents {
-        height: calc(100vh - 112px);
+        min-height: calc(100vh - 112px);
         display: flex;
         flex-direction: column;
         margin: 56px 0;
@@ -216,6 +215,7 @@ body.page-template-page-profile {
 }
 
 @media screen and (max-width: 768px) {
+    /* 共通 */
     .for-mobile  {
         display: block !important;
     }
@@ -226,25 +226,29 @@ body.page-template-page-profile {
         padding-right: unset !important;
         padding-left: unset !important;
     }
-    .portfolio-flame {
-        display: none;
+    /* ポートフォリオ用フッター */
+    .portfolio-footer {
+        position: absolute !important;
     }
+    /* ポートフォリオ用メイン */
     .portfolio-main {
+        height: auto;
+        min-height: calc(100vh - 56px);
         margin-top: 56px !important;
         margin-left: unset !important;
         margin-right: unset !important;
-        margin-bottom: 1rem !important;
-        height: auto;
+        margin-bottom: unset !important;
         padding: 3rem 1rem;
         display: flex !important;
         gap: 3rem !important;
     }
+    /* ポートフォリオフレーム */
+    .portfolio-flame {
+        display: none;
+    }
     
     /* フロントページ */
     body.home {
-        .portfolio-main {
-            height: calc(100vh - 112px);
-        }
         .vp-portfolio__items-arrow-prev {
             left: 0 !important;
         }
@@ -279,6 +283,7 @@ body.page-template-page-profile {
             }
             .portfolio-right {
                 padding: unset !important;
+                margin: unset !important;
             }
         }
     }
