@@ -1,6 +1,6 @@
 <?php
-if (!function_exists('mkopt_block_assets')) :
-    function mkopt_block_assets () {
+if (!function_exists('mkopt_enqueue_scripts')) :
+    function mkopt_enqueue_scripts () {
         wp_enqueue_style (
             'mkopt-custom',
             get_theme_file_uri('assets/css/custom.css')
@@ -11,7 +11,8 @@ if (!function_exists('mkopt_block_assets')) :
         // );
     }
 endif;
-add_action('enqueue_block_assets', 'mkopt_block_assets');
+// add_action('enqueue_block_assets', 'mkopt_block_assets');
+add_action('wp_enqueue_scripts', 'mkopt_enqueue_scripts');
 
 // GSAPの読み込み
 function theme_gsap_script(){
